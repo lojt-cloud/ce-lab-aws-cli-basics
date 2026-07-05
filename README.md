@@ -1,4 +1,4 @@
-# Lab M1.03 - AWS CLI Basics
+# Lab M1.02-2 - AWS CLI Basics
 
 **Repository:** https://github.com/cloud-engineering-bootcamp/ce-lab-aws-cli-basics
 
