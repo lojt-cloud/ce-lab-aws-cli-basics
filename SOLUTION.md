@@ -54,33 +54,37 @@ region     : eu-west-2                : config-file      : ~/.aws/config
 
 ### Screenshot
 
-![Task 3](screenshots/task3-caller-identity.png)
 
----
+<img width="846" height="167" alt="task3-caller-identity" src="https://github.com/user-attachments/assets/f9dec890-a0fb-4ce6-ab82-caaf3415c8a9" />
+
 
 # Task 4 - AWS Regions
 
-Number of Regions:
+Number of Regions:17
 
-Default Region:
+Default Region: eu-west-2
 
-Closest Region:
+Closest Region: REGIONS ec2.eu-central-1.amazonaws.com  opt-in-not-required     eu-central-1  (Frankfurt)
 
 ### Screenshot
 
-![Task 4](screenshots/task4-regions.png)
+<img width="816" height="336" alt="task4-regions" src="https://github.com/user-attachments/assets/a4854f02-44ca-4df8-aafd-16c21be99976" />
+
 
 ---
 
 # Task 5 - Availability Zones
 
-Number of AZs:
+Number of AZs: 123
 
 Why are multiple AZs important?
+Since AZs are physically isolated, a localised disaster or power outage in one zone won’t affect the others, traffic is automatically rerouted to a healthy zone to prevent downtime.
+The ultra low latency between AZs enables real-time data replication, preventing data loss and allowing for automated disaster recovery.
 
 ### Screenshot
 
-![Task 5](screenshots/task5-availability-zones.png)
+<img width="647" height="762" alt="task5-availability-zones" src="https://github.com/user-attachments/assets/abfdfa94-1bf3-4be7-abb6-61f961872861" />
+
 
 ---
 
