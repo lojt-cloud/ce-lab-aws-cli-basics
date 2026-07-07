@@ -56,14 +56,6 @@ json
     "Arn": "arn:aws:iam::*************010:user/lojt-bootcamp"
 }
 
-How many AWS Regions are available?
-17
-Which Region is configured as your default?
-eu-west-2
-How many Availability Zones exist in your current Region?
-3 zones named a,b and c in eu-west-2
-Why should production workloads use multiple Availability Zones?
-Because if a major incident (like a power outage, flood, or fire) knocks out an entire data center facility in one zone, the application won't go offline. Traffic will automatically route to the remaining zones, keeping the app running smoothly without any downtime or data loss.
 ### Screenshot
 
 
@@ -77,6 +69,9 @@ Number of Regions:17
 Default Region: eu-west-2
 
 Closest Region: REGIONS ec2.eu-central-1.amazonaws.com  opt-in-not-required     eu-central-1  (Frankfurt)
+
+Why should production workloads use multiple Availability Zones?
+Because if a major incident (like a power outage, flood, or fire) knocks out an entire data centre facility in one zone, the application won't go offline. Traffic will automatically route to the remaining zones, keeping the app running smoothly without any downtime or data loss.
 
 ### Screenshot
 
@@ -103,58 +98,81 @@ The ultra-low latency between AZs enables real-time data replication, preventing
 # Task 6 - S3 Investigation
 
 Buckets:
+2026-07-06 12:31:56 aws-cloudtrail-logs-743631836010-4d76b8fa
+2026-07-06 12:34:08 aws-cloudtrail-logs-743631836010-65e73e3a
 
 Reason if none exist:
+N/A
 
 ### Screenshot
 
-![Task 6](screenshots/task6-s3-buckets.png)
+<img width="583" height="65" alt="task6-s3-buckets" src="https://github.com/user-attachments/assets/29540653-4a86-4afe-bc74-de0f6d94924b" />
+
 
 ---
 
 # Task 7 - IAM Investigation
 
 IAM Users:
+1 
+------------------------------------------------------------------
+|                            ListUsers                           |
++----------------------------------------------------------------+
+||                             Users                            ||
+|+------------+-------------------------------------------------+|
+||  Arn       |  arn:aws:iam::********010:user/lojt-bootcamp    ||
+||  CreateDate|  2026-07-06T19:28:57+00:00                      ||
+||  Path      |  /                                              ||
+||  UserId    | *****************27NCE                          ||
+||  UserName  |  lojt-bootcamp                                  ||
+|+------------+-------------------------------------------------+|
 
 Why avoid using the root account?
+The root account has absolute, unrestricted power over the entire AWS account, including billing and the ability to delete everything. If those credentials are leaked or hacked, someone could easily lock the owner out, delete infrastructure, or run up a massive bill.
 
 ### Screenshot
 
-![Task 7](screenshots/task7-iam-users.png)
+<img width="856" height="315" alt="task7-iam-users" src="https://github.com/user-attachments/assets/6ac7a27d-ce95-4942-bf45-02c39486d014" />
+
 
 ---
 
 # Task 8 - EC2 Investigation
 
 Running Instances:
+none
 
 Key Pairs:
+none
 
 Instance Types:
+N/A
 
 ### Screenshot
 
-![Task 8](screenshots/task8-ec2-info.png)
+<img width="606" height="190" alt="task8-ec2-info" src="https://github.com/user-attachments/assets/d94edcbe-aefa-4fc8-ba8e-e56c160f6bbf" />
+
 
 ---
 
 # Task 9 - Output Formats
 
 Preferred format:
+json
 
 Reason:
+JSON is the industry standard for AWS because it structures the data cleanly, making it easy to read. It's also the best format that can be used to pass the CLI output into other tools, scripts, or automation.
 
 ### Screenshot
 
-![Task 9](screenshots/task9-output-formats.png)
+<img width="424" height="69" alt="task9-output-formats" src="https://github.com/user-attachments/assets/08403e1f-3439-4063-9ac7-1ff27d116203" />
+
 
 ---
 
 # Reflection
+Moving away from clicking around the AWS console and switching entirely to the command line felt like a turning point in how I view the cloud. Running commands to pull account details, check security identities, and audit active EC2 resources helped me understand how actual cloud engineers manage infrastructure efficiently. The standout concept for me was how AWS handles resilience. Seeing firsthand how regions map out and realising that Availability Zones are physically separated to survive major power outages, while still being close enough to share data instantly.
 
-...
-
----
 
 # Bonus
 
