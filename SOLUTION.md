@@ -45,9 +45,9 @@ region     : eu-west-2                : config-file      : ~/.aws/config
 
  aws sts get-caller-identity
 {
-    "UserId": "AIDA22I7JKNVBEE427NCE",
-    "Account": "743631836010",
-    "Arn": "arn:aws:iam::743631836010:user/lojt-bootcamp"
+    "UserId": "*************27NCE",
+    "Account": "*************010",
+    "Arn": "arn:aws:iam::*************010:user/lojt-bootcamp"
 }
 
 ```
