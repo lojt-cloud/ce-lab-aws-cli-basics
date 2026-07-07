@@ -1,22 +1,22 @@
 # AWS CLI Basics - Solution
 
-Name:
+Name: Balint Lojt
 
-GitHub Username:
+GitHub Username: lojt-cloud
 
 ---
 
 # Task 1 - Verify AWS CLI
 
 ## aws --version
-
-```text
+aws-cli/2.31.35 Python/3.14.4 Linux/6.6.114.1-microsoft-standard-WSL2 source/x86_64.ubuntu.26
 
 ```
 
 ### Screenshot
 
-![Task 1](screenshots/task1-aws-version.png)
+<img width="929" height="76" alt="task1-aws-version" src="https://github.com/user-attachments/assets/26a5b265-760e-423d-80a7-61a9eec177ee" />
+
 
 ---
 
@@ -24,13 +24,18 @@ GitHub Username:
 
 ## aws configure list
 
-```text
+NAME       : VALUE                    : TYPE             : LOCATION
+profile    : <not set>                : None             : None
+access_key : ****************UA73     : shared-credentials-file :
+secret_key : ****************5CXA     : shared-credentials-file :
+region     : eu-west-2                : config-file      : ~/.aws/config
 
 ```
 
 ### Screenshot
 
-![Task 2](screenshots/task2-configure-list.png)
+<img width="912" height="279" alt="task2-configure-list" src="https://github.com/user-attachments/assets/635c6c32-8250-4258-888f-081d441c0360" />
+
 
 ---
 
@@ -38,7 +43,12 @@ GitHub Username:
 
 ## aws sts get-caller-identity
 
-```text
+ aws sts get-caller-identity
+{
+    "UserId": "AIDA22I7JKNVBEE427NCE",
+    "Account": "743631836010",
+    "Arn": "arn:aws:iam::743631836010:user/lojt-bootcamp"
+}
 
 ```
 
