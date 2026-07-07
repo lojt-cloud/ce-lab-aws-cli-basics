@@ -30,8 +30,14 @@ access_key : ****************UA73     : shared-credentials-file :
 secret_key : ****************5CXA     : shared-credentials-file :
 region     : eu-west-2                : config-file      : ~/.aws/config
 
-```
-
+What is your AWS Account ID?
+*********010
+What is your IAM User ARN?
+Arn": "arn:aws:iam::********010:user/lojt-bootcamp
+What is your configured default Region?
+eu-west-2
+What output format is configured?
+json
 ### Screenshot
 
 <img width="912" height="279" alt="task2-configure-list" src="https://github.com/user-attachments/assets/635c6c32-8250-4258-888f-081d441c0360" />
@@ -50,8 +56,14 @@ region     : eu-west-2                : config-file      : ~/.aws/config
     "Arn": "arn:aws:iam::*************010:user/lojt-bootcamp"
 }
 
-```
-
+How many AWS Regions are available?
+17
+Which Region is configured as your default?
+eu-west-2
+How many Availability Zones exist in your current Region?
+3 zones named a,b and c in eu-west-2
+Why should production workloads use multiple Availability Zones?
+Because if a major incident (like a power outage, flood, or fire) knocks out an entire data center facility in one zone, the application won't go offline. Traffic will automatically route to the remaining zones, keeping the app running smoothly without any downtime or data loss.
 ### Screenshot
 
 
@@ -79,7 +91,7 @@ Number of AZs: 123
 
 Why are multiple AZs important?
 Since AZs are physically isolated, a localised disaster or power outage in one zone won’t affect the others, traffic is automatically rerouted to a healthy zone to prevent downtime.
-The ultra low latency between AZs enables real-time data replication, preventing data loss and allowing for automated disaster recovery.
+The ultra-low latency between AZs enables real-time data replication, preventing data loss and allowing for automated disaster recovery.
 
 ### Screenshot
 
