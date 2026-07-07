@@ -38,6 +38,7 @@ What is your configured default Region?
 eu-west-2
 What output format is configured?
 json
+
 ### Screenshot
 
 <img width="912" height="279" alt="task2-configure-list" src="https://github.com/user-attachments/assets/635c6c32-8250-4258-888f-081d441c0360" />
@@ -113,8 +114,8 @@ N/A
 
 # Task 7 - IAM Investigation
 
-IAM Users:
-1 
+IAM Users: 1
+ 
 ------------------------------------------------------------------
 |                            ListUsers                           |
 +----------------------------------------------------------------+
